@@ -1,0 +1,68 @@
+{
+  "0100": {
+    "name": "Supported PIDs [01-20]",
+    "description": "PIDs supported [01-20]",
+    "units": "bit encoded",
+    "formula": "raw_value"
+  },
+  "010C": {
+    "name": "Engine RPM",
+    "description": "Engine rotational speed",
+    "units": "rpm",
+    "formula": "(256 * A + B) / 4"
+  },
+  "010D": {
+    "name": "Vehicle Speed",
+    "description": "Current vehicle speed",
+    "units": "km/h",
+    "formula": "A"
+  },
+  "0105": {
+    "name": "Engine Coolant Temperature",
+    "description": "Temperature of engine coolant",
+    "units": "°C",
+    "formula": "A - 40"
+  },
+  "010B": {
+    "name": "Intake Manifold Pressure",
+    "description": "Absolute pressure in intake manifold",
+    "units": "kPa",
+    "formula": "A"
+  },
+  "0111": {
+    "name": "Throttle Position",
+    "description": "Absolute throttle position",
+    "units": "%",
+    "formula": "A * 100 / 255"
+  },
+  "015E": {
+    "name": "Fuel Rate",
+    "description": "Engine fuel rate",
+    "units": "L/h",
+    "formula": "(256 * A + B) / 20"
+  },
+  "0142": {
+    "name": "Control Module Voltage",
+    "description": "ECU voltage",
+    "units": "V",
+    "formula": "(256 * A + B) / 1000"
+  },
+  "0146": {
+    "name": "Ambient Air Temperature",
+    "description": "Outside air temperature",
+    "units": "°C",
+    "formula": "A - 40"
+  },
+  "22114A": {
+    "name": "GM Battery Voltage",
+    "description": "Vehicle battery voltage",
+    "units": "V",
+    "formula": "A / 10"
+  },
+  "221121": {
+    "name": "GM Transmission Temperature",
+    "description": "Transmission fluid temperature",
+    "units": "°C",
+    "formula": "A - 40"
+  }
+}

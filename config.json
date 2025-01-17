@@ -1,0 +1,20 @@
+{
+  "connection": {
+    "mode": "serial",
+    "port": "COM3",
+    "baudrate": 9600
+  },
+  "logging": {
+    "log_file": "logs/vcm.log"
+  },
+  "pids": {
+    "file": "config/pids.json"
+  },
+  "graphing": {
+    "refresh_rate_ms": 1000
+  },
+  "gui": {
+    "window_title": "Vehicle Communication Module",
+    "window_size": [800, 600]
+  }
+}
